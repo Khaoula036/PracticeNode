@@ -1,6 +1,11 @@
 const names = require('./names')
 const sayHi = require('./utiles')
+const data = require('./alternative-flavor')
+require('./mind-grenade')
 
-sayHi('susan')
-sayHi(names.john)
-sayHi(names.peter)
+
+
+//console.log(data)
+//sayHi('susan')
+//sayHi(names.john)
+//sayHi(names.peter)
