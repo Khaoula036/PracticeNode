@@ -15,3 +15,9 @@ writeFileSync(
 
 console.log('done with this task')
 console.log('starting the next one')
+
+/* result :  //the lines are executed one after the other
+start
+done with this task 
+starting the next one
+*/

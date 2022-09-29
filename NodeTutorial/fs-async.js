@@ -27,3 +27,10 @@ readFile('./content/first.txt', 'utf8', (err, result) => {
   })
 })
 console.log('starting next task')
+
+//the async version is better than sync because it doesn't stop the excution of the program  
+/* result :
+start
+starting next task   //the last line can be executed before the function
+done with this task
+*/
