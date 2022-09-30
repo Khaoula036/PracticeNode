@@ -1,20 +1,12 @@
-const http = require('http')
+//manuel approach (create package.json in the root, create proprties etc )
+// npm init (step by step, press enter to skip )
+// npm init -y (everything default )
 
-const server = http.createServer((req, res)  => {
-    if (req.url == '/') {   
-        res.end('welcome to our home page')
-    }
-    else if (req.url == '/about') {
-        res.end('Here is our short history')
-    }else {
-    res.end(`       
-    <h1>Oops!</h1>
-    <p>We can't seem to find the page you are looking for</p>
-    <a href="/">back home</a>
-     `)  
-    }        
-})
+const _ = require('lodash')
 
-server.listen(5000)
+const items = [1, [2, [3, [4]]]]
+const newItems = _.flattenDeep(items)
+console.log(newItems)
+console.log('hello people')
 
-
+// reesult: [ 1, 2, 3, 4 ]    
