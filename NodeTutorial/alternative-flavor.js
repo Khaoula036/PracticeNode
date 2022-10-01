@@ -4,5 +4,3 @@ const person = {
 }
 
 module.exports.singlePerson = person
-
-// { items : [ 'item1' , 'item2' ], singlePerson : { name = 'bob' } }
