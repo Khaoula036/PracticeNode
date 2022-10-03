@@ -5,6 +5,7 @@ var fs = require('fs')
 
 http
   .createServer(function (req, res) {
+    //version: big size
     //const text = fs.readFileSync('./content/big.txt', 'utf8')
     //res.end(text)
     const fileStream = fs.createReadStream('./content/big.txt', 'utf8')
@@ -16,3 +17,5 @@ http
     })
 })
 .listen(5000)
+
+//Transfer-encoding: chunked 
