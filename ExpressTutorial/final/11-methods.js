@@ -9,10 +9,11 @@ app.use(express.urlencoded({ extended: false }))
 // parse json
 app.use(express.json())
 
+//../javascript.html
 app.get('/api/people', (req, res) => {
   res.status(200).json({ success: true, data: people })
 })
-
+//Can't fetch data: dont forget to add reference for people:(./data)
 app.post('/api/people', (req, res) => {
   const { name } = req.body
   if (!name) {
